@@ -1,4 +1,4 @@
-.container{
+.login .container{
     width: 450px;
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
@@ -8,13 +8,13 @@
     
 }
 
-.container h1{
+.login .container h1{
     text-align: center;
     font-size: 30px;
     color: #fff;
 }
 
-.container .input-field {
+.login .container .input-field {
     position: relative;
     width: 100%;
     height: 50%;
@@ -22,7 +22,7 @@
 
 }
 
-.input-field input {
+.login .input-field input {
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -34,11 +34,11 @@
     padding: 20px 25px;
 }
 
-.input-field input::placeholder{
+.login .input-field input::placeholder{
     color: #fff;
 }
 
-.input-field .icon{
+.login .input-field .icon{
     position: absolute;
     right: 25px;
     top: 50%;
@@ -47,31 +47,31 @@
     color: #fff;
 }
 
-.container .recall-forget {
+.login .container .recall-forget {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
 
-.recall-forget label{
+.login .recall-forget label{
     color: #fff;
 }
 
-.recall-forget input {
+.login .recall-forget input {
     margin-right: 5px;
 }
 
-.recall-forget a, .signup-link p a {
+.login .recall-forget a, .signup-link p a {
     color: #fff;
     text-decoration: none;
 }
 
-.recall-forget a:hover, .signup-link p a:hover{
+.login .recall-forget a:hover, .signup-link p a:hover{
     text-decoration: underline;
 }
 
-.container button {
+.login .container button {
     width: 100%;
     height:50px;
     background-color: #fff;
@@ -86,17 +86,17 @@
 
 }
 
-.container .signup-link {
+.login .container .signup-link {
     font-size: 15px;
     text-align: center;
     margin: 20px 0 10px;
 
 }
 
-.singup-link p a {
+.login .singup-link p a {
     color: #fff;
 }
 
-.signup-link p {
+.login .signup-link p {
     color: #fff;
 }

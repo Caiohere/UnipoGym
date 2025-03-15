@@ -1,0 +1,92 @@
+.gerador .container {
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.15) ;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+
+.gerador .container h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.gerador .container2 {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.gerador .container2 h2{
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.gerador .container .input-field {
+    position: relative;
+    width: 30%;
+    height: 25px;
+    margin: 30px auto;
+    text-shadow: none;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 35px;
+}
+.gerador .container2 input::placeholder{
+    color: #fff;
+}
+
+.gerador .container2 label{
+    color: #fff;
+    padding: 2px;
+}
+
+.gerador .container2 .int{
+    position: absolute;
+    right: 110px;
+    top: 167px;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    width: 25%;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 2px 40px;
+    text-shadow: none;
+}
+
+.gerador .container .salvar {
+    text-shadow: none;
+    position: absolute;
+    right: 50px;
+    top: 260px;
+    width: 15%;
+    height: 9%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    border-radius: 40px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.gerador .container .menu{
+    text-shadow: none;
+    width: 10%;
+    height: 9%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    border-radius: 40px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    padding: 1px;
+
+}

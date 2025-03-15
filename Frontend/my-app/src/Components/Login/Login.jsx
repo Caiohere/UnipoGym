@@ -1,5 +1,6 @@
 import { FaUser, FaLock } from 'react-icons/fa';
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "../../firebase";
 
 import "./Login.css";
@@ -8,7 +9,9 @@ const Login = () => {
   const [username, setUsername] = useState("");  
   const [password, setPassword] = useState("");  
   const [isRegistering, setIsRegistering] = useState(false); // Para controlar se é login ou registro
+  const navigate = useNavigate();
 
+  
   // Função para lidar com login ou registro
   async function handleAuth(event) {
     event.preventDefault(); // Impede o comportamento padrão de recarregar a página
@@ -29,6 +32,7 @@ const Login = () => {
         const userCredential = await signInWithEmailAndPassword(auth, username, password);
         console.log("Usuário logado:", userCredential.user);
         alert("Login efetuado com sucesso!")
+        navigate('/gerador');
       } catch (error) {
         console.error("Erro ao fazer login:", error.message);
         alert(error.message);
@@ -37,7 +41,7 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className="login">
       <div className="container">
         <form onSubmit={handleAuth}>
           <h1>UNIPO GYM</h1>
