@@ -5,7 +5,7 @@ import { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from
 
 import "./Login.css";
 
-const Login = () => {
+const Login = ({ setIsAuthenticated }) => {
   const [username, setUsername] = useState("");  
   const [password, setPassword] = useState("");  
   const [isRegistering, setIsRegistering] = useState(false); // Para controlar se é login ou registro
@@ -32,6 +32,7 @@ const Login = () => {
         const userCredential = await signInWithEmailAndPassword(auth, username, password);
         console.log("Usuário logado:", userCredential.user);
         alert("Login efetuado com sucesso!")
+        setIsAuthenticated(true);
         navigate('/gerador');
       } catch (error) {
         console.error("Erro ao fazer login:", error.message);
