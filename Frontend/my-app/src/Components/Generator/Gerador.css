@@ -1,36 +1,13 @@
 @media (max-width: 768px) {
-    .gerador {
-      width: 100%;
+    .container {
+      width: 10%;
       padding: 10px;
     }
-  
-    .container {
-      width: 100%;
     }
   
-    .container2 {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .input-field,
-    .input-field-2,
-    .input-field-3 {
-      width: 100%;
-    }
-  
-    .novo {
-      font-size: 1.2rem;
-      padding: 8px;
-    }
-  
-    .salvar {
-      width: 100%;
-    }
-  }
   
 .gerador .container {
-    width: 600px;
+    width: 500px;
     height: 900px;
     background-color: rgba(255, 255, 255, 0.15) ;
     backdrop-filter: blur(10px);
@@ -67,7 +44,7 @@
 
 .gerador .container2 .input-field-3{
     position: top;
-    width: 300px;
+    width: 250px;
     height: 25px;
     margin: 10px 0;
     margin-left: 13px;
@@ -102,7 +79,7 @@
     outline: none;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
     padding: 20px 15px;
 }
@@ -117,7 +94,7 @@
     outline: none;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
     padding: 20px 15px;
 }
@@ -131,7 +108,7 @@
     width: 30%;
     border-radius: 40px;
     font-size: 16px;
-    padding: 2px 35px;
+    padding: 2px 22px;
     text-shadow: none;
     outline: none;
 }
@@ -199,7 +176,7 @@
     text-shadow: none;
     right: 50px;
     top: 260px;
-    width: 15%;
+    width: 20%;
     height: 5%;
     border: 2px solid rgba(255, 255, 255, 0.2);
     margin-top: 20px;
@@ -215,7 +192,7 @@
     font-size: 20px;
     flex: 0 0 70px;
     text-shadow: none;
-    margin-left: 60px;
+    margin-left: 40px;
     padding-bottom: 25px;
     
     width: 0px;
