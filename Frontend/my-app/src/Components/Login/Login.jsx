@@ -35,8 +35,8 @@ const Login = ({ setIsAuthenticated }) => {
         setIsAuthenticated(true);
         navigate('/gerador');
       } catch (error) {
-        console.error("Erro ao fazer login:", error.message);
-        alert(error.message);
+        // console.error("Erro ao fazer login:", error.message);
+        alert("Erro ao fazer login \nTente novamente ou registre-se");
       }
     }
   }

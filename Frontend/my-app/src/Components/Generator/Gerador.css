@@ -1,5 +1,6 @@
 .gerador .container {
-    width: 700px;
+    width: 600px;
+    height: 900px;
     background-color: rgba(255, 255, 255, 0.15) ;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -8,30 +9,38 @@
     
 }
 
+.lista-exercicios {
+    max-height: 600px; 
+    overflow-y: auto;  
+  }
+
+  .lista-exercicios::-webkit-scrollbar {
+    
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+  
+
 .gerador .container h1 {
     text-align: center;
     font-size: 30px;
     color: #fff;
 }
 
-.gerador .container2 {
+.gerador .container .container2 {
+    height: auto;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 10px;
-
+    margin-top: 30px;
 }
 
-.gerador .container2 h2{
-    font-size: 20px;
-    color: #fff;
-    
-}
-
-.gerador .container .input-field {
-    position: relative;
-    width: 30%;
+.gerador .container2 .input-field-3{
+    position: top;
+    width: 300px;
     height: 25px;
-    margin: 30px auto;
+    margin: 10px 0;
+    margin-left: 13px;
+    margin-bottom: 0px;
     text-shadow: none;
     background-color: transparent;
     outline: none;
@@ -39,37 +48,130 @@
     border-radius: 40px;
     font-size: 16px;
     color: #fff;
-    padding: 20px 35px;
+    padding: 20px 15px;
 }
+
+.gerador .container2 {
+    display: flex;  
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 10px; 
+    width: 100%; 
+    flex-wrap: wrap;
+}
+
+.gerador .container2 .input-field {
+    position: top;
+    width: 30%;
+    height: 25px;
+    margin: 10px 0;
+    margin-left: 13px;
+    text-shadow: none;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 15px;
+}
+
+.gerador .container2 .input-field-2 {
+    position: bottom;
+    width: 30%;
+    height: 25px;
+    margin: 10px 0;
+    text-shadow: none;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 15px;
+}
+
+.gerador .container2 .int{
+    position: bottom;
+    right: 110px;
+    top: 167px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    width: 30%;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 2px 35px;
+    text-shadow: none;
+    outline: none;
+}
+
+.gerador .container2 .int .l1{
+    outline: none; 
+    text-shadow: none;
+}
+
+
+.gerador 
+.input-field::-webkit-outer-spin-button,
+.input-field::-webkit-inner-spin-button {
+    background: transparent; 
+    border: none;
+}
+
 .gerador .container2 input::placeholder{
     color: #fff;
+    opacity: 0.6;
 }
 
 .gerador .container2 label{
     color: #fff;
     padding: 2px;
+    opacity: 0.6;
 }
 
-.gerador .container2 .int{
-    position: absolute;
-    right: 110px;
-    top: 167px;
-    border: 2px solid rgba(255, 255, 255, 0.2); 
-    width: 25%;
-    border-radius: 40px;
-    font-size: 16px;
-    padding: 2px 40px;
+
+.gerador .Intervalo {
+    background-color: transparent;
+    border: 0px solid #ccc; 
+    color: #FFF; 
+    padding: 5px 10px; 
+    outline: none;
     text-shadow: none;
+}
+
+.gerador .Intervalo option {
+    color: #000000; 
+    
+}
+
+
+.gerador .container .novo{
+    text-shadow: none;
+    right: 50px;
+    top: 260px;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    border-radius: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
 }
 
 .gerador .container .salvar {
+    position: top;
     text-shadow: none;
-    position: absolute;
     right: 50px;
     top: 260px;
     width: 15%;
-    height: 9%;
+    height: 5%;
     border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
     background-color: transparent;
     border-radius: 40px;
     color: #fff;
@@ -77,16 +179,21 @@
     cursor: pointer;
 }
 
-.gerador .container .menu{
+.gerador .container2 .excluir {
+    text-align: center;
+    font-size: 20px;
+    flex: 0 0 70px;
     text-shadow: none;
-    width: 10%;
-    height: 9%;
+    margin-left: 60px;
+    padding-bottom: 25px;
+    
+    width: 0px;
+    height: 20px;
     border: 2px solid rgba(255, 255, 255, 0.2);
+    
     background-color: transparent;
     border-radius: 40px;
     color: #fff;
     outline: none;
     cursor: pointer;
-    padding: 1px;
-
 }
