@@ -24,7 +24,7 @@
 
   .lista-exercicios::-webkit-scrollbar {
     
-    border-radius: 10px; /* Bordas arredondadas */
+    width: 0;
   }
   
 
