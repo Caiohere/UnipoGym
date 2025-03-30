@@ -7,6 +7,7 @@ import "./Gerador.css";
 
 const Gerador = () => {
   const [exercicios, setExercicios] = useState([]);
+  const [showInputs, setShowInputs] = useState(false);
 
   const adicionarExercicio = () => {
     setExercicios([
@@ -84,12 +85,21 @@ const Gerador = () => {
       <div className="container">
         <form>
           <h1>Gerador de Treino</h1>
+
+          {showInputs && (
+            <div className="modo-professor">
+              <input type="text" placeholder="Aluno" className="aluno-nome" />
+              <input type="number" placeholder="Idade" className="aluno-idade" />
+              <input type="number" placeholder="Peso" className="aluno-peso" />    
+            </div>
+          )}
+
           <button type="button" className="novo" onClick={adicionarExercicio}>
             +
           </button>
 
           {exercicios.length > 0 && (
-            <div className="lista-exercicios">
+            <div className={`lista-exercicios ${showInputs ? "open" : ""}`}>
               {exercicios.map((exercicio) => (
                 <div key={exercicio.id} className="container2">
                   <input
@@ -148,6 +158,11 @@ const Gerador = () => {
         <button onClick={gerarPDF} className="salvar">
           Gerar PDF
         </button>
+        <label className="textoSwitch">Modo professor</label>
+          <label class="switch">
+              <input type="checkbox" onChange={(e) => setShowInputs(e.target.checked)}/>
+              <span class="slider round"></span>
+          </label>
       </div>
     </div>
   );
