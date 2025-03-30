@@ -93,7 +93,7 @@ const Gerador = () => {
     <div className="gerador">
       <div className="container">
         <form>
-          <h1>Gerador de Treino</h1>
+          <h1 className="titulo-tela">Gerador de Treino</h1>
 
           {showInputs && (
             <div className="modo-professor">

@@ -1,9 +1,9 @@
-@media (max-width: 768px) {
-    .container {
-      width: 10%;
-      padding: 10px;
-    }
-    }
+@media (max-width: 450px) {
+  .gerador {
+    position: center;
+    transform: scale(1);
+  }
+}
   
   
 .gerador .container {
@@ -34,10 +34,10 @@
   }
   
 
-.gerador .container h1 {
+  .titulo-tela {
     text-align: center;
     font-size: 30px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .gerador .container .container2 {

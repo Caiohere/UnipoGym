@@ -1,3 +1,10 @@
+@media (max-width: 450px) {
+    .container {
+        position: center;
+        transform: scale(0.8);
+    }
+}
+
 .login .container{
     width: 450px;
     background-color: rgba(255, 255, 255, 0.15);
